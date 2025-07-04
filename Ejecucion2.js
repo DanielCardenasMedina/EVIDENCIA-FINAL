@@ -1,5 +1,5 @@
-Tiempolvl2 = 61 //VARIBLE DE INICIO TIEMPO
-Puntajelvl2 = 0 //VARIABLE DE INICIO PUNTOS
+let Tiempolvl2 = 61 //VARIBLE DE INICIO TIEMPO
+let Puntajelvl2 = 0 //VARIABLE DE INICIO PUNTOS
 
 
 
@@ -202,7 +202,7 @@ function JUEGOlvl2(){
         //LE DECIMOS QUE AL PRECIONAR EL BOTON JUGAR EJECUTARA LA FUNCION PLAY     
         document.getElementById("Playlvl2").addEventListener('click', PLAYlvl2)
 
-        Conteolvl2 = 4 //ESTE ES EL CONTEO DE LA CUENTA REGRESIVA QUE SE DA DESPUEZ DE PRESINAR JUGAR
+        let Conteolvl2 = 4 //ESTE ES EL CONTEO DE LA CUENTA REGRESIVA QUE SE DA DESPUEZ DE PRESINAR JUGAR
             
             //ESTA FUNCION EJECUTA UN CONJUNTO DE ACCIONES AL PRESIONAR JUGAR
             function PLAYlvl2(){
