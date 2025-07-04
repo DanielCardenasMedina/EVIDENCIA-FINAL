@@ -18,8 +18,8 @@ Swal.fire({
 
 
 
-Tiempo = 71 //VARIBLE DE INICIO TIEMPO
-Puntaje = 0 //VARIABLE DE INICIO PUNTOS
+let Tiempo = 71 //VARIBLE DE INICIO TIEMPO
+let Puntaje = 0 //VARIABLE DE INICIO PUNTOS
 
 //ESTEEE ERA LA VARIABLEEE
 let derrotasNivel1 = 0;
@@ -27,7 +27,7 @@ let derrotasNivel1 = 0;
 
 //FUNCION DE NARRACIONES
 
-Narracion = 1
+let Narracion = 1
 document.getElementById("Contenedor_narracion").addEventListener('click', Iniciar_narracion)
 
 function Iniciar_narracion() {
@@ -48,7 +48,7 @@ function Iniciar_narracion() {
 
 
 
-Graficos = 1 //Este es el medidor de graficos
+let Graficos = 1 //Este es el medidor de graficos
 
 //En esta funcion cambio de fondo al presionar el CHEKBOX, para graurar los graficos dentro del juego
 function Graficos_fondo() {
@@ -264,7 +264,7 @@ function JUEGO() {
 //LE DECIMOS QUE AL PRECIONAR EL BOTON JUGAR EJECUTARA LA FUNCION PLAY     
 document.getElementById("Play").addEventListener('click', PLAY)
 
-Conteo = 4 //ESTE ES EL CONTEO DE LA CUENTA REGRESIVA QUE SE DA DESPUEZ DE PRESINAR JUGAR
+let Conteo = 4 //ESTE ES EL CONTEO DE LA CUENTA REGRESIVA QUE SE DA DESPUEZ DE PRESINAR JUGAR
 
 //ESTA FUNCION EJECUTA UN CONJUNTO DE ACCIONES AL PRESIONAR JUGAR
 function PLAY() {
@@ -359,7 +359,7 @@ function DETENER_JUEGO() {
                 }
             }
 
-            Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
+            let Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
 
             document.getElementById("Meteiorito").style.left = Distancia1 + "%"
             document.getElementById("Meteiorito").style.top = Altura1 + "px"
