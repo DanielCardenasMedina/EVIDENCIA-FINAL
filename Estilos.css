@@ -628,15 +628,23 @@ html body {
 
 .NEXT {
     width: 15vw;
-    height: 3vw;
+    height: 3.5vw;
     background: rgb(0, 132, 255);
-    font-size: 0.9vw;
+    font-size: 1.1vw;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    float: right;
-    margin-left: 12%;
+    position: absolute;
+    bottom: 10%; /* Se posiciona dentro de la pantalla de victoria */
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 0px 0px 10px #fff;
+    transition: background 0.3s ease;
 }
 
 .Contenedor_LVL {
