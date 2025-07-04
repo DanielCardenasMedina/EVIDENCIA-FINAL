@@ -272,10 +272,9 @@ function PLAYlvl3() {
     document.getElementById("Playlvl3").style.left = "-900px"
     //MUEVE LA DIFICULTAD AL PRESIONAR JUGAR
     document.getElementById("Dificultadlvl3").style.left = "-900px"
-    function ARRACARlvl3(){    
-        JUEGOlvl3()}
+
     //INVOCA AL JUEGO UNA VEZ PASEN 4 SEGUNDO - OSEA UNA VEZ TERMINE EL CONTADOR
-    tiempo_de_arranquelvl3 =  setTimeout(ARRACARlvl3, 4100)
+    tiempo_de_arranquelvl3 =  setTimeout(JUEGOlvl3, 4100)
     //ESTA FUNCION EJECUTA LA CUENTA REGRESIVA Y RETIRA LA PANTALLA START 
     function ESPERARlvl3() {
         function Cuenta_rglvl3() {

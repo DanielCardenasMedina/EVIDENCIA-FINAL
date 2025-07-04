@@ -241,11 +241,9 @@ function JUEGO(){
                 document.getElementById("Texo").style.left = "-900px" 
                 //MUEVE AL BOTON PLAY TRANS PRESIONAR PRESIONAR AL MISMO BOTON
                 document.getElementById("Contenedor_Mensaje_Star").style.left = "-100%" 
-                    //ESTA FUNCION CONTIENE AL JUEGO COMO TAL
-                    function ARRACAR(){    
-                        JUEGO()}
+
                 //INVOCA AL JUEGO UNA VEZ PASEN 4 SEGUNDO - OSEA UNA VEZ TERMINE EL CONTADOR
-                tiempo_de_arranque =  setTimeout(ARRACAR, 4100)
+                tiempo_de_arranque =  setTimeout(JUEGO, 4100)
                 //ESTA FUNCION EJECUTA LA CUENTA REGRESIVA Y RETIRA LA PANTALLA START 
                 function ESPERAR(){
                     function Cuenta_rg(){

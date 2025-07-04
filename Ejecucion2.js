@@ -212,11 +212,9 @@ function JUEGOlvl2(){
                 //MUEVE AL BOTON PLAY TRANS PRESIONAR PRESIONAR AL MISMO BOTON
                 document.getElementById("Playlvl2").style.left = "-900px" 
                 document.getElementById("Dificultad").style.left = "-900px"
-                    //ESTA FUNCION CONTIENE AL JUEGO COMO TAL
-                    function ARRACARlvl2(){    
-                        JUEGOlvl2()}
+
                 //INVOCA AL JUEGO UNA VEZ PASEN 4 SEGUNDO - OSEA UNA VEZ TERMINE EL CONTADOR
-                tiempo_de_arranquelvl2 =  setTimeout(ARRACARlvl2, 4100)
+                tiempo_de_arranquelvl2 =  setTimeout(JUEGOlvl2, 4100)
                 //ESTA FUNCION EJECUTA LA CUENTA REGRESIVA Y RETIRA LA PANTALLA START 
                 function ESPERARlvl2(){
                     function Cuenta_rglvl2(){
