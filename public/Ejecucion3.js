@@ -34,13 +34,13 @@ function JUEGOlvl3() {
             Puntajelvl3 = 0
             Tiempolvl3 = 51
             function Contactos(){
-            Swal.fire({
+            ({
                 title : 'Felicitaciones por parte del <br> Grupo Omega<br><br><img src="IMG/Logo_Omega.png" width = "120px">',
                 html: '<b class="Aumentar puntos">Sabia que lo lograrias, nos salVaste de la destrucciÓn, pero ahora nos espera otra lucha, esperemos volVerte a ver jugando IRON FIST 2 en un futuro <br><br> CONTACTOS:<br><br> 71727432@certus.edu.pe <br><br> 71663265@certus.edu.pe <br><br> 70845813@certus.edu.pe <br> </b>',
                 icon: 'sucess',
                 confirmButtonText: '<span id="Pausear_musica">De acuerdo</span>',
                 width: '50%',
-                height: '80%',
+                height: '80%Swal.fire',
                 timer: 100000,
                 
                 

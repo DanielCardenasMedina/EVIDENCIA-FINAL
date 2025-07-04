@@ -206,8 +206,12 @@ function JUEGO(){
         //ESTA FUNCION SE ENCARGA DE ALERTARTE UNA VEZ EL METIORITO CRUZE LA LINEA CON UN PERDISTE
         //TAMBIEN RESETEA LOS VALORES Y LLEVA A LOS METIORITOS FUERA DEL MAPA DE MANERA INSTANTANEA
         function perdiste (){
-            if((document.getElementById("Meteiorito").offsetLeft > 630) ||
-            (document.getElementById("Meteiorito2").offsetLeft > 630)) {
+            const limitePantalla = window.innerWidth;
+
+            const meteoro1 = document.getElementById("Meteiorito").getBoundingClientRect();
+            const meteoro2 = document.getElementById("Meteiorito2").getBoundingClientRect();
+
+if (meteoro1.left > limitePantalla || meteoro2.left > limitePantalla) {
 
                 document.getElementById("Perdiste_sound").play()
                 alert("YA ES DEMASIADO TARDE, LOS METEORITOS DESTRUYERON GRAN PARTE DEL CONTINENTE Y LO MEJOR ES ESPERAR LO PEOR")
