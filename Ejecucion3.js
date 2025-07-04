@@ -349,7 +349,7 @@ function DETENER_JUEGOlvl3() {
                 if (Tiempolvl3 == 0) {
                     Tiempolvl3 = 51
                     Puntajelvl3 = 0
-                    alert("Lo lamento perdiste")
+                    //alert("Lo lamento perdiste")
                 }
             }
 

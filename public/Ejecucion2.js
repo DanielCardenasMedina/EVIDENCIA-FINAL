@@ -1,5 +1,5 @@
-Tiempolvl2 = 61 //VARIBLE DE INICIO TIEMPO
-Puntajelvl2 = 0 //VARIABLE DE INICIO PUNTOS
+let Tiempolvl2 = 61 //VARIBLE DE INICIO TIEMPO
+let Puntajelvl2 = 0 //VARIABLE DE INICIO PUNTOS
 
 
 
@@ -92,8 +92,8 @@ function JUEGOlvl2(){
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 1 A LA TIERRA 
         function Metiorito_Direccionlvl2(){
-            Distancia1lvl2 = 80
-            Altura1lvl2 = Math.round(Math.random()* 450)
+            let Distancia1lvl2 = 80
+            let Altura1lvl2 = Math.round(Math.random()* 450)
 
             document.getElementById("Meteioritolvl2").style.left = Distancia1lvl2 + "%"
             document.getElementById("Meteioritolvl2").style.top = Altura1lvl2 + "px"}
@@ -104,8 +104,8 @@ function JUEGOlvl2(){
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
         function Metiorito_Direccion2lvl2(){
-            Distancia2lvl2 = 80
-            Altura2lvl2 = Math.round(Math.random()* 450)
+            let Distancia2lvl2 = 80
+            let Altura2lvl2 = Math.round(Math.random()* 450)
 
             document.getElementById("Meteiorito2lvl2").style.left = Distancia2lvl2 + "%"
             document.getElementById("Meteiorito2lvl2").style.top = Altura2lvl2 + "px"}
@@ -115,8 +115,8 @@ function JUEGOlvl2(){
 
             //ESTA FUNCION DIRIGE AL PRIMER METIORITO 3 A LA TIERRA
             function Metiorito_Direccion3lvl2(){
-                Distancia3lvl2 = 80
-                Altura3lvl2 = Math.round(Math.random()* 450)
+                let Distancia3lvl2 = 80
+                let Altura3lvl2 = Math.round(Math.random()* 450)
     
                 document.getElementById("Meteiorito3lvl2").style.left = Distancia3lvl2 + "%"
                 document.getElementById("Meteiorito3lvl2").style.top = Altura3lvl2 + "px"}
@@ -134,8 +134,8 @@ function JUEGOlvl2(){
         //ESTA ES LA FUNCION QUE EXPULSA AL METEORITO 1 DE MANERA ALEATORIA FUERA DEL MAPA
         function Explulsarlvl2 (){
             document.getElementById("Puntos_sound").play()
-            Distancialvl2 = "-500"
-            Alturalvl2 = Math.round(Math.random()* 450)
+            let Distancialvl2 = "-500"
+            let Alturalvl2 = Math.round(Math.random()* 450)
             document.getElementById("Meteioritolvl2").style.left = Distancialvl2 + "px"
             document.getElementById("Meteioritolvl2").style.top = Alturalvl2 + "px"
             document.getElementById("Meteioritolvl2").style.transition = "1.8s"}
@@ -144,8 +144,8 @@ function JUEGOlvl2(){
         //ESTA ES LA FUNCION QUE EXPULSA AL METEORITO 2 DE MANERA ALEATORIA FUERA DEL MAPA
         function Explulsar2lvl2 (){
             document.getElementById("Punto2").play()
-            Distancialvl2 = "-500"
-            Alturalvl2 = Math.round(Math.random()* 450)
+            let Distancialvl2 = "-500"
+            let Alturalvl2 = Math.round(Math.random()* 450)
             document.getElementById("Meteiorito2lvl2").style.left = Distancialvl2 + "px"
             document.getElementById("Meteiorito2lvl2").style.top = Alturalvl2 + "px"
             document.getElementById("Meteiorito2lvl2").style.transition = "1.8s"}
@@ -153,8 +153,8 @@ function JUEGOlvl2(){
          //ESTA ES LA FUNCION QUE EXPULSA AL METEORITO 3 DE MANERA ALEATORIA FUERA DEL MAPA
         function Explulsar3lvl2 (){
             document.getElementById("Punto3").play()
-            Distancialvl2 = "-500"
-            Alturalvl2 = Math.round(Math.random()* 450)
+            let Distancialvl2 = "-500"
+            let Alturalvl2 = Math.round(Math.random()* 450)
             document.getElementById("Meteiorito3lvl2").style.left = Distancialvl2 + "px"
             document.getElementById("Meteiorito3lvl2").style.top = Alturalvl2 + "px"
             document.getElementById("Meteiorito3lvl2").style.transition = "1.8s"}
@@ -274,7 +274,7 @@ function JUEGOlvl2(){
                                 if(Tiempolvl2 == 0){
                                     Tiempolvl2 = 61
                                     Puntajelvl2 = 0
-                                alert("Lo lamento perdiste") } }
+                                //alert("Lo lamento perdiste") } }
 
                                 Restar_Tiempolvl2 = setInterval(Tiempo_Disminurlvl2, 1000)
         

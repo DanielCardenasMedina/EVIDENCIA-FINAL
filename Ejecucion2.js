@@ -173,7 +173,7 @@ function JUEGOlvl2(){
             {
                 document.getElementById("Perdiste_sound").play()
             
-                alert("YA ES DEMASIADO TARDE, LOS METEORITOS DESTRUYERON GRAN PARTE DEL CONTINENTE Y LO MEJOR ES ESPERAR LO PEOR")
+               alert ("YA ES DEMASIADO TARDE, LOS METEORITOS DESTRUYERON GRAN PARTE DEL CONTINENTE Y LO MEJOR ES ESPERAR LO PEOR")
 
 
                 document.getElementById("Meteioritolvl2").style.left = "-70%"
@@ -274,7 +274,7 @@ function JUEGOlvl2(){
                                 if(Tiempolvl2 == 0){
                                     Tiempolvl2 = 61
                                     Puntajelvl2 = 0
-                                alert("Lo lamento perdiste") } }
+                                //alert("Lo lamento perdiste") } }
 
                                 Restar_Tiempolvl2 = setInterval(Tiempo_Disminurlvl2, 1000)
         

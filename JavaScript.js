@@ -345,7 +345,7 @@ function DETENER_JUEGO() {
                     Tiempo = 71
                     Puntaje = 0
                     document.getElementById("Perdiste_sound").play()
-                    alert("Lo lamento perdiste")
+                    //alert("Lo lamento perdiste")
                     document.getElementById("Meteiorito").style.left = "-70%"
                     document.getElementById("Meteiorito").style.transition = "0s" //CREAR UNA FUNCION EN BASE A ESTO Y PASAR COMO REANUDAR EN GANASTE
 
