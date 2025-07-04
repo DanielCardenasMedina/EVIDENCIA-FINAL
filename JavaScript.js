@@ -135,7 +135,7 @@ function JUEGO() {
                 document.getElementById("Meteiorito2").style.transition = "0s"
             }
 
-            let Desbloquear_Pantalla = setInterval(Ganaste_Pantalla, 1)
+            Desbloquear_Pantalla = setInterval(Ganaste_Pantalla, 1)
 
             Swal.fire({
                 title: 'FELICIDADES POR SUPERAR <br> EL NIVEL <br><br> <img src="IMG/Check.png" width = "120px"><br>',
@@ -309,7 +309,7 @@ function DETENER_JUEGO() {
     //INDICA QUE LA FUNCION DE PAUSE SE EJECUTARA UNA VEZ SE DE CLICK AL BOTON DE PAUSE        
     document.getElementById("Pause").addEventListener('click', PAUSE)
     //ESTA VARIABLE INDICA SI SE EJECUTA O NO EL DESPAUSEO
-    Activo = 1
+    let Activo = 1
     //HACE QUE EL JUEGO SE DETENGA
     function PAUSE() { //Colocar la funcion de pausa y reanudar
         //SI LLEGA A UNA EJECUTA LA FUNCION PAUSE
@@ -359,7 +359,7 @@ function DETENER_JUEGO() {
                 }
             }
 
-            let Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
+            Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
 
             document.getElementById("Meteiorito").style.left = Distancia1 + "%"
             document.getElementById("Meteiorito").style.top = Altura1 + "px"

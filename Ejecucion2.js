@@ -92,8 +92,8 @@ function JUEGOlvl2(){
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 1 A LA TIERRA 
         function Metiorito_Direccionlvl2(){
-            Distancia1lvl2 = 80
-            Altura1lvl2 = Math.round(Math.random()* 450)
+            let Distancia1lvl2 = 80
+            let Altura1lvl2 = Math.round(Math.random()* 450)
 
             document.getElementById("Meteioritolvl2").style.left = Distancia1lvl2 + "%"
             document.getElementById("Meteioritolvl2").style.top = Altura1lvl2 + "px"}
@@ -104,8 +104,8 @@ function JUEGOlvl2(){
 
         //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
         function Metiorito_Direccion2lvl2(){
-            Distancia2lvl2 = 80
-            Altura2lvl2 = Math.round(Math.random()* 450)
+            let Distancia2lvl2 = 80
+            let Altura2lvl2 = Math.round(Math.random()* 450)
 
             document.getElementById("Meteiorito2lvl2").style.left = Distancia2lvl2 + "%"
             document.getElementById("Meteiorito2lvl2").style.top = Altura2lvl2 + "px"}
@@ -115,8 +115,8 @@ function JUEGOlvl2(){
 
             //ESTA FUNCION DIRIGE AL PRIMER METIORITO 3 A LA TIERRA
             function Metiorito_Direccion3lvl2(){
-                Distancia3lvl2 = 80
-                Altura3lvl2 = Math.round(Math.random()* 450)
+                let Distancia3lvl2 = 80
+                let Altura3lvl2 = Math.round(Math.random()* 450)
     
                 document.getElementById("Meteiorito3lvl2").style.left = Distancia3lvl2 + "%"
                 document.getElementById("Meteiorito3lvl2").style.top = Altura3lvl2 + "px"}
@@ -134,8 +134,8 @@ function JUEGOlvl2(){
         //ESTA ES LA FUNCION QUE EXPULSA AL METEORITO 1 DE MANERA ALEATORIA FUERA DEL MAPA
         function Explulsarlvl2 (){
             document.getElementById("Puntos_sound").play()
-            Distancialvl2 = "-500"
-            Alturalvl2 = Math.round(Math.random()* 450)
+            let Distancialvl2 = "-500"
+            let Alturalvl2 = Math.round(Math.random()* 450)
             document.getElementById("Meteioritolvl2").style.left = Distancialvl2 + "px"
             document.getElementById("Meteioritolvl2").style.top = Alturalvl2 + "px"
             document.getElementById("Meteioritolvl2").style.transition = "1.8s"}
@@ -144,8 +144,8 @@ function JUEGOlvl2(){
         //ESTA ES LA FUNCION QUE EXPULSA AL METEORITO 2 DE MANERA ALEATORIA FUERA DEL MAPA
         function Explulsar2lvl2 (){
             document.getElementById("Punto2").play()
-            Distancialvl2 = "-500"
-            Alturalvl2 = Math.round(Math.random()* 450)
+            let Distancialvl2 = "-500"
+            let Alturalvl2 = Math.round(Math.random()* 450)
             document.getElementById("Meteiorito2lvl2").style.left = Distancialvl2 + "px"
             document.getElementById("Meteiorito2lvl2").style.top = Alturalvl2 + "px"
             document.getElementById("Meteiorito2lvl2").style.transition = "1.8s"}
@@ -153,8 +153,8 @@ function JUEGOlvl2(){
          //ESTA ES LA FUNCION QUE EXPULSA AL METEORITO 3 DE MANERA ALEATORIA FUERA DEL MAPA
         function Explulsar3lvl2 (){
             document.getElementById("Punto3").play()
-            Distancialvl2 = "-500"
-            Alturalvl2 = Math.round(Math.random()* 450)
+            let Distancialvl2 = "-500"
+            let Alturalvl2 = Math.round(Math.random()* 450)
             document.getElementById("Meteiorito3lvl2").style.left = Distancialvl2 + "px"
             document.getElementById("Meteiorito3lvl2").style.top = Alturalvl2 + "px"
             document.getElementById("Meteiorito3lvl2").style.transition = "1.8s"}
@@ -239,7 +239,7 @@ function JUEGOlvl2(){
                 //INDICA QUE LA FUNCION DE PAUSE SE EJECUTARA UNA VEZ SE DE CLICK AL BOTON DE PAUSE        
                 document.getElementById("Pauselvl2").addEventListener('click', PAUSElvl2)
                 //ESTA VARIABLE INDICA SI SE EJECUTA O NO EL DESPAUSEO
-                Activolvl2 = 1 
+                let Activolvl2 = 1 
                     //HACE QUE EL JUEGO SE DETENGA
                     function PAUSElvl2(){
                         //SI LLEGA A UNA EJECUTA LA FUNCION PAUSE
@@ -291,8 +291,8 @@ function JUEGOlvl2(){
                         document.getElementById("Meteiorito3lvl2").style.transition = "2s"
 
                         function Metiorito_Direccionlvl2(){
-                            Distancia1lvl2 = 80
-                            Altura1lvl2 = Math.round(Math.random()* 450)
+                            let Distancia1lvl2 = 80
+                            let Altura1lvl2 = Math.round(Math.random()* 450)
                 
                             document.getElementById("Meteioritolvl2").style.left = Distancia1lvl2 + "%"
                             document.getElementById("Meteioritolvl2").style.top = Altura1lvl2 + "px"}
@@ -302,8 +302,8 @@ function JUEGOlvl2(){
                 
                 
                             function Metiorito_Direccion2lvl2(){
-                                Distancia2lvl2 = 80
-                                Altura2lvl2 = Math.round(Math.random()* 400)
+                                let Distancia2lvl2 = 80
+                                let Altura2lvl2 = Math.round(Math.random()* 400)
                 
                                 document.getElementById("Meteiorito2lvl2").style.left = Distancia2lvl2 + "%"
                                 document.getElementById("Meteiorito2lvl2").style.top = Altura2lvl2 + "px"}
@@ -313,8 +313,8 @@ function JUEGOlvl2(){
                 
                             
                             function Metiorito_Direccion3lvl2(){
-                                Distancia3lvl2 = 80
-                                Altura3lvl2 = Math.round(Math.random()* 350)
+                                let Distancia3lvl2 = 80
+                                let Altura3lvl2 = Math.round(Math.random()* 350)
                     
                                 document.getElementById("Meteiorito3lvl2").style.left = Distancia3lvl2 + "%"
                                 document.getElementById("Meteiorito3lvl2").style.top = Altura3lvl2 + "px"}

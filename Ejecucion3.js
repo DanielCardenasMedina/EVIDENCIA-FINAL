@@ -17,7 +17,7 @@ function JUEGOlvl3() {
             alert("Lo lamento perdiste")
         }
     }
-    Restar_Tiempolvl3 = setInterval(Tiempo_Disminurlvl3, 1000)
+    let Restar_Tiempolvl3 = setInterval(Tiempo_Disminurlvl3, 1000)
 
     //AÑADIMOS LA FUNCION AUMENTAR PUNTOS AL PASAR EL CURSOR SOBRE LOS METEORITOS
     document.getElementById("Meteoritolvl3").addEventListener('mouseover', Aumentar_Puntoslvl3)
@@ -106,8 +106,8 @@ function JUEGOlvl3() {
 
     //ESTA FUNCION DIRIGE AL PRIMER METEORITO 1 A LA TIERRA 
     function Meteorito_Direccionlvl3() {
-        Distancia1lvl3 = 80
-        Altura1lvl3 = Math.round(Math.random() * 450)
+        let Distancia1lvl3 = 80
+        let Altura1lvl3 = Math.round(Math.random() * 450)
 
         document.getElementById("Meteoritolvl3").style.left = Distancia1lvl3 + "%"
         document.getElementById("Meteoritolvl3").style.top = Altura1lvl3 + "px"
@@ -115,12 +115,12 @@ function JUEGOlvl3() {
     }
 
     setTimeout(Meteorito_Direccionlvl3, 2200)
-    Intervalo_Dirlvl3 = setInterval(Meteorito_Direccionlvl3, 2950)
+    let Intervalo_Dirlvl3 = setInterval(Meteorito_Direccionlvl3, 2950)
 
     //ESTA FUNCION DIRIGE AL METEORITO 2 A LA TIERRA         
     function Meteorito_Direccion2lvl3() {
-        Distancia2lvl3 = 80
-        Altura2lvl3 = Math.round(Math.random() * 450)
+        let Distancia2lvl3 = 80
+        let Altura2lvl3 = Math.round(Math.random() * 450)
 
         document.getElementById("Meteorito2lvl3").style.left = Distancia2lvl3 + "%"
         document.getElementById("Meteorito2lvl3").style.top = Altura2lvl3 + "px"
@@ -128,12 +128,12 @@ function JUEGOlvl3() {
     }
 
     setTimeout(Meteorito_Direccion2lvl3, 2660)
-    Intervalo_Dir2lvl3 = setInterval(Meteorito_Direccion2lvl3, 2750)
+    let Intervalo_Dir2lvl3 = setInterval(Meteorito_Direccion2lvl3, 2750)
 
     //ESTA FUNCION DIRIGE AL METEORITO 3 A LA TIERRA
     function Meteorito_Direccion3lvl3() {
-        Distancia3lvl3 = 80
-        Altura3lvl3 = Math.round(Math.random() * 450)
+        let Distancia3lvl3 = 80
+        let Altura3lvl3 = Math.round(Math.random() * 450)
 
         document.getElementById("Meteorito3lvl3").style.left = Distancia3lvl3 + "%"
         document.getElementById("Meteorito3lvl3").style.top = Altura3lvl3 + "px"
@@ -141,12 +141,12 @@ function JUEGOlvl3() {
     }
 
     setTimeout(Meteorito_Direccion3lvl3, 2900)
-    Intervalo_Dir3lvl3 = setInterval(Meteorito_Direccion3lvl3, 2550)
+    let Intervalo_Dir3lvl3 = setInterval(Meteorito_Direccion3lvl3, 2550)
 
     //ESTA FUNCION DIRIGE AL METEORITO 4 A LA TIERRA
     function Meteorito_Direccion4lvl3() {
-        Distancia4lvl3 = 80
-        Altura4lvl3 = Math.round(Math.random() * 450)
+        let Distancia4lvl3 = 80
+        let Altura4lvl3 = Math.round(Math.random() * 450)
 
         document.getElementById("Meteorito4lvl3").style.left = Distancia4lvl3 + "%"
         document.getElementById("Meteorito4lvl3").style.top = Altura4lvl3 + "px"
@@ -154,7 +154,7 @@ function JUEGOlvl3() {
     }
 
     setTimeout(Meteorito_Direccion4lvl3, 3100)
-    Intervalo_Dir4lvl3 = setInterval(Meteorito_Direccion4lvl3, 2150)
+    let Intervalo_Dir4lvl3 = setInterval(Meteorito_Direccion4lvl3, 2150)
 
 
 
@@ -168,8 +168,8 @@ function JUEGOlvl3() {
     //ESTA ES LA FUNCION QUE EXPULSA AL METIRITO 1 DE MANERA ALEATORIA FUERA DEL MAPA
     function Explulsarlvl3() {
         document.getElementById("Puntos_sound").play()
-        Distancialvl3 = "-500"
-        Alturalvl3 = Math.round(Math.random() * 600)
+        let Distancialvl3 = "-500"
+        let Alturalvl3 = Math.round(Math.random() * 600)
 
         document.getElementById("Meteoritolvl3").style.left = Distancialvl3 + "px"
         document.getElementById("Meteoritolvl3").style.top = Alturalvl3 + "px"
@@ -180,8 +180,8 @@ function JUEGOlvl3() {
     //ESTA ES LA FUNCION QUE EXPULSA AL METIRITO 2 DE MANERA ALEATORIA FUERA DEL MAPA
     function Explulsar2lvl3() {
         document.getElementById("Punto2").play()
-        Distancialvl3 = "-500"
-        Alturalvl3 = Math.round(Math.random() * 500)
+        let Distancialvl3 = "-500"
+        let Alturalvl3 = Math.round(Math.random() * 500)
 
         document.getElementById("Meteorito2lvl3").style.left = Distancialvl3 + "px"
         document.getElementById("Meteorito2lvl3").style.top = Alturalvl3 + "px"
@@ -192,8 +192,8 @@ function JUEGOlvl3() {
     //ESTA ES LA FUNCION QUE EXPULSA AL METIRITO 3 DE MANERA ALEATORIA FUERA DEL MAPA
     function Explulsar3lvl3() {
         document.getElementById("Punto3").play()
-        Distancialvl3 = "-500"
-        Alturalvl3 = Math.round(Math.random() * 600)
+        let Distancialvl3 = "-500"
+        let Alturalvl3 = Math.round(Math.random() * 600)
 
         document.getElementById("Meteorito3lvl3").style.left = Distancialvl3 + "px"
         document.getElementById("Meteorito3lvl3").style.top = Alturalvl3 + "px"
@@ -203,8 +203,8 @@ function JUEGOlvl3() {
     //ESTA ES LA FUNCION QUE EXPULSA AL METIRITO 4 DE MANERA ALEATORIA FUERA DEL MAPA
     function Explulsar4lvl3() {
         document.getElementById("Punto4").play()
-        Distancialvl3 = "-500"
-        Alturalvl3 = Math.round(Math.random() * 600)
+        let Distancialvl3 = "-500"
+        let Alturalvl3 = Math.round(Math.random() * 600)
 
         document.getElementById("Meteorito4lvl3").style.left = Distancialvl3 + "px"
         document.getElementById("Meteorito4lvl3").style.top = Alturalvl3 + "px"
@@ -307,7 +307,7 @@ function DETENER_JUEGOlvl3() {
     //INDICA QUE LA FUNCION DE PAUSE SE EJECUTARA UNA VEZ SE DE CLICK AL BOTON DE PAUSE        
     document.getElementById("Pauselvl3").addEventListener('click', PAUSElvl3)
     //ESTA VARIABLE INDICA SI SE EJECUTA O NO EL DESPAUSEO
-    Activolvl3 = 1
+    let Activolvl3 = 1
     //HACE QUE EL JUEGO SE DETENGA
     function PAUSElvl3() {
         //SI LLEGA A UNA EJECUTA LA FUNCION PAUSE
@@ -374,8 +374,8 @@ function DETENER_JUEGOlvl3() {
 
             //ESTA FUNCION DIRIGE AL METEORITO 1 A LA TIERRA
             function Meteorito_Direccionlvl3() {
-                Distancia1lvl3 = 80
-                Altura1 = Math.round(Math.random() * 450)
+                let Distancia1lvl3 = 80
+                let Altura1 = Math.round(Math.random() * 450)
 
                 document.getElementById("Meteoritolvl3").style.left = Distancia1lvl3 + "%"
                 document.getElementById("Meteoritolvl3").style.top = Altura1lvl3 + "px"
@@ -383,12 +383,12 @@ function DETENER_JUEGOlvl3() {
             }
 
             setTimeout(Meteorito_Direccionlvl3, 2000)
-            Intervalo_Dirlvl3 = setInterval(Meteorito_Direccionlvl3, 2430)
+            let Intervalo_Dirlvl3 = setInterval(Meteorito_Direccionlvl3, 2430)
 
             //ESTA FUNCION DIRIGE AL METEORITO 2 A LA TIERRA         
             function Meteorito_Direccion2lvl3() {
-                Distancia2lvl3 = 80
-                Altura2lvl3 = Math.round(Math.random() * 450)
+                let Distancia2lvl3 = 80
+                let Altura2lvl3 = Math.round(Math.random() * 450)
 
                 document.getElementById("Meteorito2lvl3").style.left = Distancia2lvl3 + "%"
                 document.getElementById("Meteorito2lvl3").style.top = Altura2lvl3 + "px"
@@ -396,12 +396,12 @@ function DETENER_JUEGOlvl3() {
             }
 
             setTimeout(Meteorito_Direccion2lvl3, 2000)
-            Intervalo_Dir2lvl3 = setInterval(Meteorito_Direccion2lvl3, 2350)
+            let Intervalo_Dir2lvl3 = setInterval(Meteorito_Direccion2lvl3, 2350)
 
             //ESTA FUNCION DIRIGE AL METEORITO 3 A LA TIERRA
             function Meteorito_Direccion3lvl3() {
-                Distancia3lvl3 = 80
-                Altura3lvl3 = Math.round(Math.random() * 450)
+                let Distancia3lvl3 = 80
+                let Altura3lvl3 = Math.round(Math.random() * 450)
 
                 document.getElementById("Meteorito3lvl3").style.left = Distancia3lvl3 + "%"
                 document.getElementById("Meteorito3lvl3").style.top = Altura3lvl3 + "px"
@@ -409,12 +409,12 @@ function DETENER_JUEGOlvl3() {
             }
 
             setTimeout(Meteorito_Direccion3lvl3, 2000)
-            Intervalo_Dir3lvl3 = setInterval(Meteorito_Direccion3lvl3, 2250)
+            let Intervalo_Dir3lvl3 = setInterval(Meteorito_Direccion3lvl3, 2250)
 
             //ESTA FUNCION DIRIGE AL METEORITO 4 A LA TIERRA
             function Meteorito_Direccion4lvl3() {
-                Distancia4lvl3 = 80
-                Altura4lvl3 = Math.round(Math.random() * 450)
+                let Distancia4lvl3 = 80
+                let Altura4lvl3 = Math.round(Math.random() * 450)
 
                 document.getElementById("Meteorito4lvl3").style.left = Distancia4lvl3 + "%"
                 document.getElementById("Meteorito4lvl3").style.top = Altura4lvl3 + "px"
