@@ -205,28 +205,35 @@ function JUEGO(){
         
         //ESTA FUNCION SE ENCARGA DE ALERTARTE UNA VEZ EL METIORITO CRUZE LA LINEA CON UN PERDISTE
         //TAMBIEN RESETEA LOS VALORES Y LLEVA A LOS METIORITOS FUERA DEL MAPA DE MANERA INSTANTANEA
-        function perdiste (){
-            const limitePantalla = window.innerWidth;
+        function perdiste() {
+    const limitePantalla = window.innerWidth;
 
-            const meteoro1 = document.getElementById("Meteiorito").getBoundingClientRect();
-            const meteoro2 = document.getElementById("Meteiorito2").getBoundingClientRect();
+    const meteoro1 = document.getElementById("Meteiorito").getBoundingClientRect();
+    const meteoro2 = document.getElementById("Meteiorito2").getBoundingClientRect();
 
-if (meteoro1.left > limitePantalla || meteoro2.left > limitePantalla) {
+    if (meteoro1.left > limitePantalla || meteoro2.left > limitePantalla) {
+        derrotasNivel1 += 1;
+        document.getElementById("Perdiste_sound").play();
 
-                document.getElementById("Perdiste_sound").play()
-                alert("YA ES DEMASIADO TARDE, LOS METEORITOS DESTRUYERON GRAN PARTE DEL CONTINENTE Y LO MEJOR ES ESPERAR LO PEOR")
-                document.getElementById("Meteiorito").style.left = "-70%"
-                document.getElementById("Meteiorito").style.transition = "0s"
+        alert("YA ES DEMASIADO TARDE, LOS METEORITOS DESTRUYERON GRAN PARTE DEL CONTINENTE Y LO MEJOR ES ESPERAR LO PEOR");
 
-                document.getElementById("Meteiorito2").style.left = "-70%"
-                document.getElementById("Meteiorito2").style.transition = "0s"
-                
-                Tiempo = 71
-                Puntaje = 0 }
-        
-            else {
-                document.getElementById("Meteiorito").style.transition = "2.4s"
-                document.getElementById("Meteiorito2").style.transition = "2.4s"} }
+        if (derrotasNivel1 === 2) {
+            document.getElementById("Contenedor_Pista").style.display = "block";
+        }
+
+        document.getElementById("Meteiorito").style.left = "-70%";
+        document.getElementById("Meteiorito").style.transition = "0s";
+
+        document.getElementById("Meteiorito2").style.left = "-70%";
+        document.getElementById("Meteiorito2").style.transition = "0s";
+
+        Tiempo = 71;
+        Puntaje = 0;
+    } else {
+               document.getElementById("Meteiorito").style.transition = "2.4s";
+        document.getElementById("Meteiorito2").style.transition = "2.4s";
+    }
+}
 
         setInterval(perdiste, 1)//LE COLOCAMOS UNO PARA QUE SIEMPRE SE ESTE EJECUTANDO, DADO A 
         //QUE NO SABEMOS CUANDO EL METIORITO VA A SUPERAR EL LIMITE
