@@ -93,7 +93,7 @@ function JUEGO() {
     }
 
 
-    Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
+    let Restar_Tiempo = setInterval(Tiempo_Disminur, 1000)
 
     //AÑADIMOS LA FUNCION AUMENTAR PUNTOS AL PASAR EL CURSOR SOBRE LOS METIORITOS
     document.getElementById("Meteiorito").addEventListener('mouseover', Aumentar_Puntos)
@@ -135,7 +135,7 @@ function JUEGO() {
                 document.getElementById("Meteiorito2").style.transition = "0s"
             }
 
-            Desbloquear_Pantalla = setInterval(Ganaste_Pantalla, 1)
+            let Desbloquear_Pantalla = setInterval(Ganaste_Pantalla, 1)
 
             Swal.fire({
                 title: 'FELICIDADES POR SUPERAR <br> EL NIVEL <br><br> <img src="IMG/Check.png" width = "120px"><br>',
@@ -170,7 +170,7 @@ function JUEGO() {
     }
 
     setTimeout(Metiorito_Direccion, 2000)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-    Reanudar_trayectoria = setInterval(Metiorito_Direccion, 2430)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
+    let Reanudar_trayectoria = setInterval(Metiorito_Direccion, 2430)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,4 SEGUNDOS
 
 
     //ESTA FUNCION DIRIGE AL PRIMER METIORITO 2 A LA TIERRA         
@@ -183,7 +183,7 @@ function JUEGO() {
     }
 
     setTimeout(Metiorito_Direccion2, 2600)//PRIMERO VA A SER EJECUTADO A LOS DOS PRIMEROS SEGUNDOS
-    Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 2350)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
+    let Reanudar_trayectoria2 = setInterval(Metiorito_Direccion2, 2350)//LUEGO SE VA A LLAMAR A LOS METIORITOS CADA 2,3 SEGUNDOS
 
 
     //AQUI ADJUNTAMOS LA ACCION DE LA FUNCION EXPULZAR AL PASAR SOBRE EL METIORITO
